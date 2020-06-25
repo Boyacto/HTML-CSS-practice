@@ -1,24 +1,114 @@
+<!--You need !doctype html to start with-->
 <!DOCTYPE html>
-<html>
+<!--It helps for search engine, it defines the language of the page, not essential-->
+<html lang="en">
+<!--head provides stylesheet or javascript to the page to body-->
 <head>
-    <title>For you Covid19 </title>
+    <!--There are only 6 tags to put in the head-->
+    <!--meta: provide additional information to the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title: title of the page-->
+    <title>Title of the html</title>
+    <!--script: add script to the page-->
+    <!--link: add another file to the page-->
+    <!--style: add stylesheet to the page-->
+    <!--base: set default direction to the page-->
 </head>
 <body>
+    <!--body is what really users see-->
     <b></b>
-    <h2 id="fy2covid19">For you COVID-19</h2>
-    <h3 id="fy3covid19">For you COVID-19</h3>
-    <h4 id="fy4covid19">For you COVID-19</h4>
-    <h5 id="fy5covid19">For you COVID-19</h5>
-    <h6 id="fy6covid19">For you COVID-19</h6>
-    <p>FY  <ins>fy covid19</ins> Fy <small>wow<sub><del>lovely</del></sub>heyy<i>wow</i></sub></small> COVID-19</p>
-    <hr />
-    <p>Lorem <b>ipsum</b> dolor sit amet consectetur adipisicing elit. Quod architecto reiciendis iste debitis cum esse necessitatibus error inventore, quo accusantium non nostrum placeat similique. Aliquam, vero! Natus nemo error delectus.</p>
-    <br>
-    <a href="https://www.coronanow.kr/">coronanow</a>
-    <a href="#">hola</a>
-    <a href="#fy2covid19">hola</a>
+    <!--h1,h2,h3,h4,h5,h6: those are word tag, which provides the title and their size-->
+    <h1 id="fy2covid19h1">For you COVID-19</h2>
+    <h2 id="fy2covid19h2">For you COVID-19</h2>
+    <h3 id="fy3covid19h3">For you COVID-19</h3>
+    <h4 id="fy4covid19h4">For you COVID-19</h4>
+    <h5 id="fy5covid19h5">For you COVID-19</h5>
+    <h6 id="fy6covid19h6">For you COVID-19</h6>
+    <hr>
+    <!--p: provides paragraph of the page-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> 
+    <p>Quos, culpa? Quae, officia dolor error at molestias nisi id neque tempora odit, voluptatum, delectus velit consequatur hic ullam blanditiis. Doloremque, neque.</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea perferendis illum similique dolor quis vel voluptate excepturi exercitationem corrupti, aliquam consequatur eaque repudiandae debitis sint consequuntur error eos voluptatem ipsam!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum libero architecto cum aut explicabo vel quia iusto, eos sit voluptate quisquam provident et quibusdam molestiae doloremque! Ipsam, labore tempora.</p>
+    <!--hr: insert horizontal rule or line used to separate content-->
+    <hr>
+    <p>Lorem dolor sit amet consectetur adipisicing elit. Quod architecto reiciendis iste debitis cum esse necessitatibus error inventore, quo accusantium non nostrum placeat similique. Aliquam, vero! Natus nemo error delectus.</p>
+    <!--br: insert single line break, like enter, useful for writing addresses or poems-->
+    <br>
+    <!--a: anchor tag, used to add hypertext, using href-->
+    <a href="https://www.coronanow.kr/">coronanow</a>
+    <!--a: using #, can move inside the page. but ypu have to add id to the tag which is the destination-->
+    <a href="#fy5covid19h5">hola</a>
+    <a href="#fy2covid19h1">hola</a>
+    <!--b: bold text-->
+    <p><b>bold text</b></p>
+    <!--i: italic text-->
+    <p><i>italic text</i></p>
+    <!--small: small text-->
+    <p>normal text<small>small text</small></p>
+    <!--sub: under text-->
+    <p>normal text<sub>sub text</sub></p>
+    <!--sup: upper text-->
+    <p>normal text<sup>sup text</sup></p>
+    <!--ins: underline text-->
+    <p><ins>undelined text</ins></p>
+    <!--del: deleted text-->
+    <p><del>deleted text</del></p>
+    <hr>
+    <!--Example-->
+    <p><b>O</b><i>t</i><small>h</small><sub>e</sub><sup>r</sup> <ins>exa</ins>m<del>ple</del></p>
+    <b>bold text</b><br>
+    <i>italic text</i><br>
+    <small>small text</small><br>
+    <sub>sub text</sub><br>
+    <sup>sup text</sup><br>
+    <ins>undelined text</ins><br>
+    <del>deleted text</del><br>  
+    <hr>   
+    <h2>Ruby tag</h2>
+    <!--ruby tag-->
+    <ruby> <!--you can put words upper the word, used in japanese or another place-->>
+        <span>RUBY</span>
+        <rp>(</rp> <!--rp is ignored if the browser support ruby tag-->>
+        <rt>ruby</rt>
+        <rp>)</rp>
+    </ruby>
+        
+    <!--index tag-->
+    <!--ul: unordered list-->
+    <h2>Index tag</h2>
+    <h3>ul tag</h3>
+    <ul>
+        <!--li: list item-->
+        <li>Facebook</li>
+        <li>Tweeter</li>
+        <li>Linked In</li>
+    </ul>
+    <!--ol: ordered list-->
+    <h3>ol tag</h3>
+    <ol>
+        <!--list item-->
+        <li>Facebook</li>
+        <li>Tweeter</li>
+        <li>Linked In</li>
+    </ol>
+    <hr>
+    <!--Definition tags-->
+    <!--dl: definition list-->
+    <dl>
+        <!--dt: definition term tag-->
+        <dt>HTML</dt>
+        <!--dd: definition description tag-->
+        <dd>Multimedia Tag</dd>
+        <dd>Conectivity</dd>
+        <dd>Device Access</dd>
+
+        <dt>COVID-19</dt>
+        <dd>Our archenemy</dd>
+    </dl>
+
+
 </body>
     <a href="#fy3covid19">     </a>
 </html>
