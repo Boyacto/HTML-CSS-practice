@@ -25,14 +25,18 @@
     <h4 id="fy4covid19h4">For you COVID-19</h4>
     <h5 id="fy5covid19h5">For you COVID-19</h5>
     <h6 id="fy6covid19h6">For you COVID-19</h6>
-    <hr>
+    
+    <hr><!----------------------------------------------------------------------------------------------------------->
+    
     <!--p: provides paragraph of the page-->
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> 
     <p>Quos, culpa? Quae, officia dolor error at molestias nisi id neque tempora odit, voluptatum, delectus velit consequatur hic ullam blanditiis. Doloremque, neque.</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea perferendis illum similique dolor quis vel voluptate excepturi exercitationem corrupti, aliquam consequatur eaque repudiandae debitis sint consequuntur error eos voluptatem ipsam!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum libero architecto cum aut explicabo vel quia iusto, eos sit voluptate quisquam provident et quibusdam molestiae doloremque! Ipsam, labore tempora.</p>
     <!--hr: insert horizontal rule or line used to separate content-->
-    <hr>
+    
+    <hr><!----------------------------------------------------------------------------------------------------------->
+    
     <p>Lorem dolor sit amet consectetur adipisicing elit. Quod architecto reiciendis iste debitis cum esse necessitatibus error inventore, quo accusantium non nostrum placeat similique. Aliquam, vero! Natus nemo error delectus.</p>
     <!--br: insert single line break, like enter, useful for writing addresses or poems-->
     <br>
@@ -55,7 +59,9 @@
     <p><ins>undelined text</ins></p>
     <!--del: deleted text-->
     <p><del>deleted text</del></p>
-    <hr>
+    
+    <hr><!----------------------------------------------------------------------------------------------------------->
+    
     <!--Example-->
     <p><b>O</b><i>t</i><small>h</small><sub>e</sub><sup>r</sup> <ins>exa</ins>m<del>ple</del></p>
     <b>bold text</b><br>
@@ -65,7 +71,9 @@
     <sup>sup text</sup><br>
     <ins>undelined text</ins><br>
     <del>deleted text</del><br>  
-    <hr>   
+    
+    <hr><!----------------------------------------------------------------------------------------------------------->
+    
     <h2>Ruby tag</h2>
     <!--ruby tag-->
     <ruby> <!--you can put words upper the word, used in japanese or another place-->>
@@ -93,7 +101,9 @@
         <li>Tweeter</li>
         <li>Linked In</li>
     </ol>
-    <hr>
+   
+    <hr><!----------------------------------------------------------------------------------------------------------->
+   
     <!--Definition tags-->
     <!--dl: definition list-->
     <dl>
@@ -107,10 +117,85 @@
         <dt>COVID-19</dt>
         <dd>Our archenemy</dd>
     </dl>
-    <hr>
+
+    <hr><!----------------------------------------------------------------------------------------------------------->
+    
     <!--table tag-->
-    <table>
-        <!--tr:ren-->
+    <table border = 1>
+        <!--tr: row of a HTML table-->
+        <tr>
+            <!--table header, or the title of each column-->
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <th>Data 1</th>
+            <th>Data 1</th>
+        </tr>
+        <tr>
+            <th>Data 2</th>
+            <th>Data 2</th>
+        </tr>
     </table>
+    <table border = "1">
+        <caption>Caption</caption>
+        <colgroup>
+            <col span = "2" style = "background: red" />
+            <col style = "background: blue" />            
+        </colgroup>
+        <thead style ="background: green">
+            <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+        </tbody>
+        <tfoot style="background: yellow">
+        <tr>
+            <td>Table data</td>
+            <td>Table data</td>
+            <td>Table data</td>
+        </tr>
+    </tfoot>
+    </table>
+    
+    <hr><!----------------------------------------------------------------------------------------------------------->
+
+    <table border = "1"><!--only attribute of table in html5, border, defines the border of the table-->
+        <tr>
+            <th colspan="3">Table Header</th><!--colspan and rowspan:attributes of th and td, determines the length and width of the cell -->
+            <th rowspan="4">Table Header</th>
+        </tr>
+    <tbody>
+        <tr>
+            <td>Table data</td>
+            <td rowspan="2">Table data</td>
+            <td>Table data</td>
+        </tr>
+        <tr>
+            <td>Table data</td>
+            <td>Table data</td>
+        </tr>
+    </table>
+    <hr><!----------------------------------------------------------------------------------------------------------->
+    <img src = "Penguins.jpg" alt="=image" width="300"/>
+
 </body>
 </html>
