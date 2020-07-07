@@ -11,7 +11,11 @@
     <!--title: title of the page-->
     <title>Title of the html</title>
     <!--script: add script to the page-->
+    <!--video.js plugin-->
+    <script href = "https://vjs.zencdn.net/7.2.3/video-js"></script>
     <!--link: add another file to the page-->
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet" />
+    
     <!--style: add stylesheet to the page-->
     <!--base: set default direction to the page-->
 </head>
@@ -195,7 +199,90 @@
         </tr>
     </table>
     <hr><!----------------------------------------------------------------------------------------------------------->
-    <img src = "Penguins.jpg" alt="=image" width="300"/>
+    <img src = "Penguins.jpg" alt="image" width="300"/>
+    <img src = "http://placehold.it/100x100" alt="=image" width="100"/>
+    <audio src ="Kalimba.m4a" preload controls="controls"></audio> <!--autoplay loop-->
+    <audio controls>
+        <source src="Kalimba.mp3" type="audio/mp3" />
+        <source src="Kalimba.ogg" type="audio/ogg" />
+    </audio>
+    <hr>
+    <video poster="http://placehold.it/400x230" width="400" height="230" controls>
+        <source src="small.mp4" type="video/mp4"/>
+        <source src="small.ogv" type="video/ogv"/>
+        <source src="small.webm" type="video/webm"/>
+    </video>
+    <form method="GET">
+        <input type="text" name="search" />
+        <input type="submit" />
+    </form>
+    <form method="POST">
+        <input type="text" name="search" />
+        <input type="submit" />
+    </form>
 
+    <hr><!----------------------------------------------------------------------------------------------------------->
+
+    <form>
+        <input type="text" name="name" /><br>
+        <input type="password" name="password" /><br>
+        <input type="file" name="file" /><br>
+        <input type="submit">
+    </form>
+    <hr><!------html4----------------------------------------------------------------------------------------------------->
+    <form>
+        <label for="checkbox">checkbox</label> 
+        <label for="radio">radio</label>
+        <label for="reset">reset</label><br />
+        <input type="text" /><br />
+        <input type="button" /><br />
+        <input id="checkbox" type="checkbox" /><br />
+        <input type="file" /><br />
+        <input type="hidden" /><br />
+        <input type="image" /><br />
+        <input type="password" /><br />
+        <input id = "radio" type="radio" /><br />
+        <input id = "reset" type="reset" /><br />
+        <input type="submit" />
+    </form>
+    <hr><!----------html5------------------------------------------------------------------------------------------------->
+    <form>
+        <input type="color" /> <br />
+        <input type="date"><br />
+        <input type="datetime"><br />
+        <input type="datetime-local"><br />
+        <input type="email"><br />
+        <input type="month"><br />
+        <input type="number"><br />
+        <input type="range"><br />
+        <input type="search"><br />
+        <input type="tel"><br />
+        <input type="time"><br />
+        <input type="url"><br />
+        <input type="week"><br />
+    </form>
+    <hr><!----------html5------------------------------------------------------------------------------------------------->
+    <form>
+        <textarea cols="100" rows="10">fycovid19
+fycovid19</textarea>
+    </form>
+    <select multiple="multiple"> <!--not beautiful in desktop-->
+        <option>beer</option>
+        <option value="">vodka</option>
+        <option>rum</option>
+        <option>tequila</option>
+    </select>
+    <hr /><!----------optgroup------------------------------------------------------------------------------------------------->
+    <select>
+        <optgroup label="HTML5">
+            <option>Multimedia tag</option>
+            <option>Connectivity</option>
+            <option>Device Access</option>
+        </optgroup>
+        <optgroup label="CSS3">
+            <option>Animation</option>
+            <option>3D Transformation</option>
+        </optgroup>
+    </select>
 </body>
 </html>
