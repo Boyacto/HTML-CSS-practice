@@ -40,17 +40,28 @@
         .header {background-color: orange;}
         p.love {color: green;}
         /*basic attribute selector: example, input has lots of attributes value so it is recommended to use this selector*/
-        input[type=text] {background: red;}
-        input[type=password] {background: blue;}
+        input[type=text].example {background: red;}
+        input[type=password].example {background: blue;}
+        /* the child selector */
+        #exampleChildSelector1 h1 {color: red;}
+        #exampleChildSelector2 h1 {color: blue;}
+        /* To select two or more child tag, need to include the mother tag each*/
+        /* #header h1, #header h2 {color: brown;} */
+        /* react selector, hover and active */
+        #exampleReact1 h1:hover {color: cadetblue;}
+        #exampleReact1 h1:active {color: crimson;}
+
     </style>
 </head>
 <body>
+    <!--Ex1-->
     <h1>CSS Selector basic</h1><!--basic css selector, red color word background orange-->
     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corrupti perspiciatis necessitatibus delectus natus, recusandae dignissimos laudantium tempora porro aliquid, quod error, velit rem minus rerum perferendis consequuntur molestias officiis!</h2>
     <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis blanditiis quo quasi et quae ut, amet magnam magni deleniti rem! Veritatis laborum voluptates maiores facere? Quas eaque accusantium dicta cum?</h3>
     <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quia, cumque illum iure animi in est hic excepturi quis expedita aliquid dolor officia omnis ex sequi! Atque provident beatae molestiae.</h4>
     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis ea, quaerat tempore praesentium nulla odio qui reiciendis? Sed eveniet deserunt tempore ipsa, fugiat ipsam harum numquam commodi dolores dolore.</h5>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corporis consectetur eos eum cumque officia impedit facere voluptate ut tempora. Modi velit suscipit labore sapiente praesentium nesciunt odio culpa odit?</p>
+    <!-- ex2 -->
     <div id="header">
         <h1>header</h1>
     </div>
@@ -63,12 +74,28 @@
         </div>
     </div>
     <ul>
+        <!-- Ex3 -->
         <li class="select header">Lorem ipsum</li>
         <li>Lorem ipsum</li>
         <li class="select">Lorem ipsum</li>
         <li>Lorem ipsum</li>
     </ul>
+    <!-- Ex4 -->
     <p class="love">Love </p>
-    
+    <form>
+        <input type="text" class="example"/>
+        <input type="password" class="example" />
+    </form>
+    <!-- Ex5 -->
+    <div id="exampleChildSelector1">
+        <h1>hi</h1>
+    </div>
+    <div id="exampleChildSelector2">
+        <h1>hi</h1>
+    </div>
+    <div id="exampleReact1">
+        <h1>Click Me</h1>
+    </div>
+
 </body>
 </html>
