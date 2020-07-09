@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS practice</title>
+    <style>
+        /*select everything and change the word to red color*/
+/*        *{ color: red; }                                  */ 
+        /*tag selector: just tags*/
+/*        
+        h1{
+            color:red;
+            background-color: orange;
+        }
+        h2{ color: seagreen;}
+        h3, h4, h5 { margin: 0; padding: 0;}
+*/        
+        /*id selector: to select just one tag, that uses the id*/
+        /*id shouldn't be copied*/
+        #header {
+            width: 800px; margin: 0 auto;
+            background: red;
+        }
+        #wrap{
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+        }
+        #aside{
+            width: 200px; float: left;
+            background: blue;
+        }
+        #content{
+            width: 600px; float: left;
+            background: green;
+
+        }
+        /* class selector, example .select */
+        .select {color: red;}
+        .header {background-color: orange;}
+        p.love {color: green;}
+        /*basic attribute selector: example, input has lots of attributes value so it is recommended to use this selector*/
+        input[type=text] {background: red;}
+        input[type=password] {background: blue;}
+    </style>
+</head>
+<body>
+    <h1>CSS Selector basic</h1><!--basic css selector, red color word background orange-->
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corrupti perspiciatis necessitatibus delectus natus, recusandae dignissimos laudantium tempora porro aliquid, quod error, velit rem minus rerum perferendis consequuntur molestias officiis!</h2>
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis blanditiis quo quasi et quae ut, amet magnam magni deleniti rem! Veritatis laborum voluptates maiores facere? Quas eaque accusantium dicta cum?</h3>
+    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quia, cumque illum iure animi in est hic excepturi quis expedita aliquid dolor officia omnis ex sequi! Atque provident beatae molestiae.</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis ea, quaerat tempore praesentium nulla odio qui reiciendis? Sed eveniet deserunt tempore ipsa, fugiat ipsam harum numquam commodi dolores dolore.</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corporis consectetur eos eum cumque officia impedit facere voluptate ut tempora. Modi velit suscipit labore sapiente praesentium nesciunt odio culpa odit?</p>
+    <div id="header">
+        <h1>header</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+        </div>
+        <div id="content">
+            <h1>Content</h1>
+        </div>
+    </div>
+    <ul>
+        <li class="select header">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li class="select">Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+    </ul>
+    <p class="love">Love </p>
+    
+</body>
+</html>
